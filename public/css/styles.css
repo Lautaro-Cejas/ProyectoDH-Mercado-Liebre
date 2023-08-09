@@ -427,17 +427,18 @@ footer .article-container .features {
     width: 100%;
     margin-left: 10px;
   }
-  
+
   footer {
     position: fixed;
     bottom: 0;
+    margin-bottom: 0;
   }
 
   footer .article-container {
     display: flex;
   }
 
-  footer .article-container .features .footer-icon:hover{
+  footer .article-container .features .footer-icon:hover {
     color: var(--azul);
   }
 }
