@@ -1,0 +1,439 @@
+/***** Configuracion general *****/
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: var(--gris-oscuro);
+  background-color: var(--gris-claro);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***** End Configuracion general *****/
+
+/***** Header *****/
+
+header {
+  background-color: var(--amarillo);
+  padding: 15px;
+}
+
+header .top-bar {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px;
+}
+
+header .top-bar .logo {
+  width: 45%;
+}
+
+header .top-bar .search-bar {
+  justify-self: center;
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  width: 45%;
+  margin-left: 5px;
+}
+
+header .top-bar .search-bar .buscador {
+  width: 120px;
+  border: none;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+header .top-bar .search-bar button {
+  border: none;
+  padding-right: 5px;
+  background-color: transparent;
+}
+
+header .top-bar .frase {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+
+header .navbar {
+  display: none;
+}
+
+header li {
+  list-style: none;
+  margin-left: 8px;
+}
+
+header li a {
+  text-decoration: none;
+  color: black;
+}
+
+header .burger-menu {
+  width: 30px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: white;
+  background-color: var(--celeste);
+}
+
+body .banner {
+  display: flex;
+  width: 100%;
+}
+/***** End Header *****/
+
+/***** Main *****/
+
+main {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+main .register-container .register-title {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main .register-container .form-container {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+main .register-container .form-container .form-field {
+  border: none;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+main .register-container .form-container .form-title {
+  color: var(--azul);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+main .register-container .form-container #date {
+  padding-right: 10px;
+}
+
+main .register-container .form-container .form-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+main .register-container .form-container .form-profile .form-profile-label {
+  font-size: 16px;
+  color: var(--azul);
+}
+
+main .register-container .form-container .form-interests {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+main .register-container .form-container .form-interests .form-cb {
+  font-size: 16px;
+  margin: 10px;
+  color: var(--azul);
+}
+
+main .register-container .form-container .form-file {
+  margin-bottom: 30px;
+}
+
+main .register-container .form-container .form-actions {
+  display: flex;
+  justify-content: center;
+}
+
+main .register-container .form-container .form-actions .back-button {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  background-color: var(--celeste);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px var(--gris-oscuro);
+  padding: 10px;
+}
+
+main .register-container .form-container .form-actions .reset-button {
+  color: var(--azul);
+  font-size: 1.2em;
+  margin-left: 10px;
+  background-color: var(--amarillo);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px var(--gris-oscuro);
+  padding: 10px;
+  cursor: pointer;
+}
+
+main .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0 20px 0;
+}
+
+main .login-container .form-container {
+  width: 70%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+main .login-container .form-container .form-field {
+  border: none;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+main .login-container .form-container .send-button {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  background-color: var(--celeste);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px var(--gris-oscuro);
+  padding: 10px;
+}
+
+main .login-container .form-container .send-button:hover {
+  background-color: #0022aa;
+}
+
+main .seccion .titular {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+main .seccion .prod-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main .seccion .prod-container .producto {
+  background-color: white;
+  margin: 0 auto;
+  width: auto;
+  margin-bottom: 10px;
+  transition: all 0.1s;
+}
+
+main .seccion .prod-container .producto:hover {
+  box-shadow: 0px 0px 10px var(--gris-oscuro);
+}
+
+main .seccion .prod-container .producto .imagen-producto {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+main .seccion .prod-container .producto .desc-box {
+  position: relative;
+  padding: 10px;
+}
+
+main .seccion .prod-container .producto .desc-box .envio {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: all 0.8s;
+}
+
+main .seccion .prod-container .producto .desc-box .envio:hover {
+  transform: rotate(-90deg);
+}
+
+main .seccion .prod-container .producto .desc-box .info {
+  display: flex;
+}
+
+main .seccion .prod-container .producto .desc-box .info .precio {
+  font-size: 18px;
+  color: black;
+}
+
+main .seccion .prod-container .producto .desc-box .info .descuento {
+  margin-left: 5px;
+  font-size: 16px;
+  color: var(--verde);
+}
+
+main .seccion .prod-container .producto .desc-box .descripcion {
+  color: transparent;
+  font-size: 16px;
+  transition: all 0.4s;
+}
+
+main .seccion .prod-container .producto .desc-box .descripcion:hover {
+  color: inherit;
+}
+
+/***** End Main *****/
+
+/***** Footer *****/
+
+footer {
+  padding-top: 30px;
+  height: auto;
+  background-color: white;
+}
+
+footer .article-container .features .footer-icon {
+  color: var(--celeste);
+  font-size: 2em;
+}
+
+footer .article-container .features {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/***** End Footer *****/
+
+/***** Responsive *****/
+
+@media (min-width: 361px) {
+  header .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header .top-bar .logo {
+    width: 20%;
+  }
+
+  header .top-bar .search-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  header .top-bar .search-bar .buscador {
+    width: 90%;
+  }
+
+  header .top-bar .search-bar button {
+    width: auto;
+  }
+
+  header .top-bar .frase {
+    text-align: end;
+    width: 30%;
+    margin-top: 0;
+  }
+
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  header .navbar .site-bar {
+    display: inherit;
+  }
+
+  header .navbar .login-bar {
+    display: inherit;
+  }
+
+  header .burger-menu {
+    display: none;
+  }
+
+  main .register-container .form-container .form-profile {
+    justify-content: start;
+  }
+
+  main .register-container .form-container .form-profile .form-profile-label {
+    margin: 10px;
+  }
+
+  main .seccion .prod-container {
+    flex-flow: row wrap;
+  }
+
+  main .seccion .prod-container .producto {
+    width: 48%;
+    margin-left: 5px;
+  }
+}
+@media (min-width: 769px) {
+  main .seccion .prod-container {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  main .seccion .prod-container .producto {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  footer .article-container {
+    display: flex;
+  }
+
+  footer .article-container .features .footer-icon:hover{
+    color: var(--azul);
+  }
+}
+/***** End Responsive *****/
